@@ -18,11 +18,14 @@
 ## Установка и Запуск
 1. Клонируйте репозиторий;
 2. Соберите проект с помощью Maven;
-3. Запустите проект с нужными аргументами.
-   
+3. Запустите JAR проект с нужными аргументами.
+
+### Примеры запуска 
 java -jar target/file-statistics-utility-1.0.jar --path <path-to-directory> --max-depth=<depth> --include-ext=<ext1,ext2> --exclude-ext=<ext3,ext4> --output=<format> --thread=<number-of-threads> --git-ignore
 
-##Параметры командной строки:
+java -jar --path "target/file-statistics-utility-1.0.jar" --recursive --max-depth 3 --thread 2 --include-ext=java,txt --exclude-ext=log,tmp --git-ignore --output json
+
+## Параметры командной строки:
 -  -p,--path <arg>          Path to directory          : Путь к директории для анализа (обязательный).
 -  -d,--max-depth <arg>     Max depth                  : Максимальная глубина обхода.
 -  -i,--include-ext <arg>   Include extensions         : Включить файлы с указанными расширениями.
