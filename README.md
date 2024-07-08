@@ -23,11 +23,12 @@
 java -jar target/file-statistics-utility-1.0.jar --path <path-to-directory> --max-depth=<depth> --include-ext=<ext1,ext2> --exclude-ext=<ext3,ext4> --output=<format> --thread=<number-of-threads> --git-ignore
 
 Параметры командной строки:
---path <path>: Путь к директории для анализа (обязательный).
---recursive: Рекурсивный обход директорий.
---max-depth <depth>: Максимальная глубина рекурсивного обхода.
---thread <number-of-threads>: Количество потоков для выполнения (минимум 1).
---include-ext <ext1,ext2,...>: Включить файлы с указанными расширениями.
---exclude-ext <ext1,ext2,...>: Исключить файлы с указанными расширениями.
---git-ignore: Игнорировать файлы, указанные в .gitignore.
---output <format>: Формат вывода (например, plain).
+ -d,--max-depth <arg>     Max depth                  : Максимальная глубина обхода.
+ -e,--exclude-ext <arg>   Exclude extensions         : Исключить файлы с указанными расширениями.
+ -g,--git-ignore          Git ignore                 : Игнорировать файлы, указанные в .gitignore.
+ -h,--help                Print this help message    : Вывод подсказки. 
+ -i,--include-ext <arg>   Include extensions         : Включить файлы с указанными расширениями.
+ -o,--output <arg>        Output format              : Формат вывода (например: plain, json, xml).
+ -p,--path <arg>          Path to directory          : Путь к директории для анализа (обязательный).
+ -r,--recursive           Recursive                  : Рекурсивный обход директорий.
+ -t,--thread <arg>        Thread count               : Количество потоков для выполнения (минимум 1).
