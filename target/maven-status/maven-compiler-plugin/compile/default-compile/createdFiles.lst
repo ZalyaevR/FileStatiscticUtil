@@ -1,0 +1,10 @@
+org\example\StatisticUtilMain.class
+org\example\Formatter\OutputFormatter.class
+org\example\Formatter\JsonOutputFormatter.class
+org\example\StatisticUtilMain$1.class
+org\example\Formatter\XmlOutputFormatter.class
+org\example\FileStats.class
+org\example\Formatter\PlainOutputFormatter.class
+org\example\CommandLineParameters.class
+org\example\Formatter\OutputFormatterFactory.class
+org\example\Formatter\XmlOutputFormatter$FileStatsWrapper.class
