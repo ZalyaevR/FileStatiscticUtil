@@ -22,13 +22,14 @@
    
 java -jar target/file-statistics-utility-1.0.jar --path <path-to-directory> --max-depth=<depth> --include-ext=<ext1,ext2> --exclude-ext=<ext3,ext4> --output=<format> --thread=<number-of-threads> --git-ignore
 
-Параметры командной строки:
- -d,--max-depth <arg>     Max depth                  : Максимальная глубина обхода.
- -e,--exclude-ext <arg>   Exclude extensions         : Исключить файлы с указанными расширениями.
- -g,--git-ignore          Git ignore                 : Игнорировать файлы, указанные в .gitignore.
- -h,--help                Print this help message    : Вывод подсказки. 
- -i,--include-ext <arg>   Include extensions         : Включить файлы с указанными расширениями.
- -o,--output <arg>        Output format              : Формат вывода (например: plain, json, xml).
- -p,--path <arg>          Path to directory          : Путь к директории для анализа (обязательный).
- -r,--recursive           Recursive                  : Рекурсивный обход директорий.
- -t,--thread <arg>        Thread count               : Количество потоков для выполнения (минимум 1).
+##Параметры командной строки:
+-  -p,--path <arg>          Path to directory          : Путь к директории для анализа (обязательный).
+-  -d,--max-depth <arg>     Max depth                  : Максимальная глубина обхода.
+-  -i,--include-ext <arg>   Include extensions         : Включить файлы с указанными расширениями.
+-  -e,--exclude-ext <arg>   Exclude extensions         : Исключить файлы с указанными расширениями.
+-  -r,--recursive           Recursive                  : Рекурсивный обход директорий.
+-  -o,--output <arg>        Output format              : Формат вывода (например: plain, json, xml).
+-  -t,--thread <arg>        Thread count               : Количество потоков для выполнения (минимум 1).
+-  -g,--git-ignore          Git ignore                 : Игнорировать файлы, указанные в .gitignore.
+-  -h,--help                Print this help message    : Вывод подсказки. 
+
