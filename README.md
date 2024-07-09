@@ -21,18 +21,18 @@
 3. Запустите JAR проект с нужными аргументами.
 
 ### Примеры запуска 
-java -jar target/file-statistics-utility-1.0.jar --path <path-to-directory> --max-depth=<depth> --include-ext=<ext1,ext2> --exclude-ext=<ext3,ext4> --output=<format> --thread=<number-of-threads> --git-ignore
+java -jar target/<jarName>.jar --path <path-to-directory> "C:\Users\<user>\<targetDirectory>" --max-depth=<depth> --include-ext=<ext1,ext2> --exclude-ext=<ext3,ext4> --output=<format> --thread=<number-of-threads> --git-ignore
 
-java -jar --path "target/file-statistics-utility-1.0.jar" --recursive --max-depth 3 --thread 2 --include-ext=java,txt --exclude-ext=log,tmp --git-ignore --output json
+java -jar <jarName>.jar --path "C:\Users\<user>\<targetDirectory>" --recursive --max-depth 3 --thread 4 --include-ext=java,txt --exclude-ext=log,tmp --git-ignore --output json
 
 ## Параметры командной строки:
--  -p,--path <arg>          Path to directory          : Путь к директории для анализа (обязательный).
--  -d,--max-depth <arg>     Max depth                  : Максимальная глубина обхода.
--  -i,--include-ext <arg>   Include extensions         : Включить файлы с указанными расширениями.
--  -e,--exclude-ext <arg>   Exclude extensions         : Исключить файлы с указанными расширениями.
--  -r,--recursive           Recursive                  : Рекурсивный обход директорий.
--  -o,--output <arg>        Output format              : Формат вывода (например: plain, json, xml).
--  -t,--thread <arg>        Thread count               : Количество потоков для выполнения (минимум 1).
--  -g,--git-ignore          Git ignore                 : Игнорировать файлы, указанные в .gitignore.
--  -h,--help                Print this help message    : Вывод подсказки. 
+-  -p,--path <arg>                   : Путь к директории для анализа (обязательный).
+-  -d,--max-depth <arg>              : Максимальная глубина обхода.
+-  -i,--include-ext <arg>            : Включить файлы с указанными расширениями.
+-  -e,--exclude-ext <arg>            : Исключить файлы с указанными расширениями.
+-  -r,--recursive                    : Рекурсивный обход директорий.
+-  -o,--output <arg>                 : Формат вывода (например: plain, json, xml).
+-  -t,--thread <arg>                 : Количество потоков для выполнения (минимум 1).
+-  -g,--git-ignore                   : Игнорировать файлы, указанные в .gitignore.
+-  -h,--help                         : Вывод подсказки. 
 
